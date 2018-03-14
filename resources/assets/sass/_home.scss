@@ -1,0 +1,119 @@
+#home{
+  background: url('https://d1pdyfnmzhu191.cloudfront.net/images/librariesprovider4/Photo-Video-Gallery/2014-01-12_june-mountain-groomers_853_1000px.jpg?sfvrsn=39537504_2')
+  center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // overflow: scroll;
+  .welcome-box{
+    background: rgba(0, 0, 0, .4);
+    margin-top: 2%;
+    padding: 40px 15px;
+    text-align: center;
+    h1{
+      font-family: 'Roboto', sans-serif;
+      font-size: 26px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    form{
+      .form-group{
+        padding: 10px;
+        input{
+          margin: 10px 0;
+          font-size: 14px;
+        }
+        .form-control{
+          width: 90%;
+          border: 1px solid rgba(0,0,0, .7);
+          padding: 5px;
+          &:focus{
+            // border: 1px solid rgba(0,0,0, .7);
+            outline: none;
+          }
+        }
+        label{
+          display: block;
+          text-align: left;
+          padding: 0 0 10px 20px;
+          font-weight: 700;
+        }
+    }
+    a{
+      text-decoration: none;
+      color: $white;
+      display: block;
+      margin-bottom: 10px;
+      &:hover{
+        text-decoration: underline;
+      }
+   }
+   .btn-lightBlue{
+   width: 80%;
+   display: block;
+   padding:  10px 20px;
+   text-align: center;
+   margin: 15px auto;
+   border-radius: 10px;
+   font-size: 23px;
+   background: $lightBlue;
+   border: none;
+   cursor: pointer;
+   transition: all .4s ease-in-out;
+   &:hover{
+     background: #87BBF6;
+     color: white;
+   }
+   }
+  }
+ }
+}
+
+
+// Laptops
+@media screen and(min-width: 1200px) and (max-width: 1500px) {
+  #home{
+    overflow: scroll;
+    .welcome-box{
+      margin-top: 3%;
+    }
+    form{
+      .form-group{
+        padding: 5px;
+      }
+    }
+  }
+}
+
+// Tablets
+@media screen and(max-width: 1199px) {
+  #home{
+    overflow: scroll;
+    .welcome-box{
+      margin-top: 5%;
+    }
+  }
+}
+
+// Phones
+@media screen and(max-width: 767px) {
+  #home{
+    .welcome-box{
+      margin-top: 15%;
+    }
+  }
+}
+
+// xs Phones
+@media screen and(max-width: 353px) {
+  #home{
+    .welcome-box{
+      margin-top: 20%;
+    }
+  }
+}

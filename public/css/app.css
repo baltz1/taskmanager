@@ -1,0 +1,642 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+  font-family: 'Roboto',sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background: #ededed;
+  height: 100%;
+  overflow: hidden;
+}
+
+#home {
+  background: url("https://d1pdyfnmzhu191.cloudfront.net/images/librariesprovider4/Photo-Video-Gallery/2014-01-12_june-mountain-groomers_853_1000px.jpg?sfvrsn=39537504_2") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home .welcome-box {
+  background: rgba(0, 0, 0, 0.4);
+  margin-top: 2%;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+#home .welcome-box h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+#home .welcome-box form .form-group {
+  padding: 10px;
+}
+
+#home .welcome-box form .form-group input {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+#home .welcome-box form .form-group .form-control {
+  width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 5px;
+}
+
+#home .welcome-box form .form-group .form-control:focus {
+  outline: none;
+}
+
+#home .welcome-box form .form-group label {
+  display: block;
+  text-align: left;
+  padding: 0 0 10px 20px;
+  font-weight: 700;
+}
+
+#home .welcome-box form a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#home .welcome-box form a:hover {
+  text-decoration: underline;
+}
+
+#home .welcome-box form .btn-lightBlue {
+  width: 80%;
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 15px auto;
+  border-radius: 10px;
+  font-size: 23px;
+  background: #25b3ec;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#home .welcome-box form .btn-lightBlue:hover {
+  background: #87BBF6;
+  color: white;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  #home {
+    overflow: scroll;
+  }
+
+  #home .welcome-box {
+    margin-top: 3%;
+  }
+
+  #home form .form-group {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #home {
+    overflow: scroll;
+  }
+
+  #home .welcome-box {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #home .welcome-box {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 353px) {
+  #home .welcome-box {
+    margin-top: 20%;
+  }
+}
+
+#all-tasks {
+  height: 100%;
+  overflow: auto;
+}
+
+#all-tasks .header {
+  background: url("https://media.istockphoto.com/photos/hase-and-panoramic-view-swiss-alps-picture-id517866756?k=6&m=517866756&s=612x612&w=0&h=854eJiSsT3gBsGif4b0c2YNDZ7T21m25Q6PiRg21XeI=") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+}
+
+#all-tasks .header .top {
+  background: rgba(58, 71, 147, 0.6);
+  padding: 50px 15px;
+  text-align: right;
+  position: relative;
+}
+
+#all-tasks .header .top .welcome {
+  position: relative;
+  top: -34px;
+  right: 18px;
+}
+
+#all-tasks .header .top .welcome a {
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+#all-tasks .header .top .welcome a:visited {
+  color: #9787ee;
+}
+
+#all-tasks .header .top .welcome a:hover {
+  color: #3a4793;
+}
+
+#all-tasks .header .top .logo {
+  font-family: 'Megrim', cursive;
+  font-size: 28px;
+  float: left;
+}
+
+#all-tasks .header .top .task-total {
+  position: relative;
+  top: -20px;
+}
+
+#all-tasks .header .top .task-total .task {
+  display: inline-block;
+}
+
+#all-tasks .header .top .task-total .task .number {
+  color: #9787ee;
+  font-weight: 100;
+  font-size: 60px;
+  margin: 0 7px 0 0;
+  position: relative;
+  top: 15px;
+}
+
+#all-tasks .header .add-circle {
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 140px;
+  right: 25px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+#all-tasks .header .add-circle .fa {
+  color: #25b3ec;
+  font-size: 50px;
+}
+
+#all-tasks .content-area {
+  color: #3d3d3d;
+  width: 100%;
+  overflow: auto;
+}
+
+#all-tasks .content-area .task-container {
+  margin: 40px 0;
+  width: 100%;
+}
+
+#all-tasks .content-area .task-container .task-box {
+  position: relative;
+  padding: 15px;
+  border-bottom: 2px solid #d1d1d1;
+  margin: 0 0 20px 0;
+  background: #fff;
+}
+
+#all-tasks .content-area .task-container .task-box .notes {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+#all-tasks .content-area .task-container .title {
+  color: black;
+  margin: 0 0 15px 0;
+  font-size: 24px;
+}
+
+#all-tasks .content-area .task-container .date {
+  color: #ababab;
+  font-size: 14px;
+}
+
+#all-tasks .content-area .task-container a {
+  text-decoration: none;
+}
+
+#all-tasks .content-area .task-container a:visited {
+  color: #3a4793;
+}
+
+#all-tasks .content-area .task-container .check-box {
+  padding: 18px;
+  border-radius: 10px;
+  border: 3px solid #3a4793;
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  font-size: 32px;
+  color: #3a4793;
+}
+
+#all-tasks .content-area .task-container .check-box .fa {
+  display: none;
+}
+
+#all-tasks .content-area .task-container .check-box.active {
+  padding: 2px;
+}
+
+#all-tasks .content-area .task-container .check-box.active .fa {
+  display: inline-block;
+}
+
+#all-tasks .content-area .task-container .fa-trash {
+  padding: 18px;
+  border-radius: 10px;
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top: 8px;
+  right: -8px;
+  font-size: 39px;
+  color: #CF2B1F;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#all-tasks .content-area .task-container .fa-trash:hover {
+  color: #FA3426;
+}
+
+#all-tasks .task-form {
+  overflow: auto;
+  background: #3a4793;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 50px 0;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+#all-tasks .task-form.active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+#all-tasks .task-form .close-btn {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#all-tasks .task-form .close-btn .fa {
+  font-size: 36px;
+}
+
+#all-tasks .task-form form {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#all-tasks .task-form h3 {
+  margin: 50px 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+#all-tasks .task-form .form-group {
+  margin-bottom: 20px;
+}
+
+#all-tasks .task-form label {
+  font-family: 'Roboto',cursive;
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+  text-transform: capitalize;
+  margin: 0 0 15px;
+}
+
+#all-tasks .task-form input[type="text"],
+#all-tasks .task-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  font-family: 'Roboto', cursive;
+  font-weight: 300;
+  font-size: 21px;
+  color: #fff;
+}
+
+#all-tasks .task-form input[type="text"]:focus,
+#all-tasks .task-form textarea:focus {
+  border: none;
+  outline: none;
+}
+
+#all-tasks .task-form textarea {
+  height: 250px;
+}
+
+#all-tasks .task-form button {
+  background: #25b3ec;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 767px) {
+  #all-tasks .header .trash {
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 112px;
+    right: 115px;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+
+  #all-tasks .header .add-circle {
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 106px;
+    right: 25px;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+
+  #all-tasks .header .top .welcome {
+    right: 2px;
+  }
+
+  #all-tasks .header .top .task-total {
+    top: 0;
+  }
+
+  #all-tasks .header .top .task-total .task {
+    display: inline-block;
+    font-size: 13px;
+  }
+
+  #all-tasks .header .top .task-total .task .number {
+    color: #9787ee;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 3px 0 0;
+    position: relative;
+    top: 3px;
+  }
+}
+
+@media screen and (max-width: 353px) {
+  #all-tasks .header .trash {
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 112px;
+    right: 115px;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+
+  #all-tasks .header .add-circle {
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 127px;
+    right: 25px;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+
+  #all-tasks .header .top .welcome {
+    font-size: 15px;
+  }
+
+  #all-tasks .header .top .welcome a {
+    padding-left: 3px;
+  }
+
+  #all-tasks .header .top .logo {
+    font-size: 25px;
+  }
+
+  #all-tasks .header .top .task-total {
+    top: 0;
+  }
+
+  #all-tasks .header .top .task-total .task {
+    display: inline-block;
+    font-size: 13px;
+  }
+
+  #all-tasks .header .top .task-total .task .number {
+    color: #9787ee;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 3px 0 0;
+    position: relative;
+    top: 3px;
+  }
+}
+

@@ -1,0 +1,328 @@
+#all-tasks{
+  height: 100%;
+  overflow: auto;
+  .header{
+    background: url('https://media.istockphoto.com/photos/hase-and-panoramic-view-swiss-alps-picture-id517866756?k=6&m=517866756&s=612x612&w=0&h=854eJiSsT3gBsGif4b0c2YNDZ7T21m25Q6PiRg21XeI=')
+    center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: $white;
+    // height: 300px;
+    .top{
+      background: rgba(58,71,147, .6);
+      padding: 50px 15px;
+      text-align: right;
+      position: relative;
+      .welcome{
+        position: relative;
+        top: -34px;
+        right: 18px;
+        a{
+          padding-left: 10px;
+          text-decoration: none;
+          &:visited{
+            color: #9787ee;
+          }
+          &:hover{
+            color:$darkBlue;
+          }
+        }
+      }
+      .logo{
+        font-family: 'Megrim', cursive;
+        font-size: 28px;
+        float: left;
+      }
+      .task-total{
+        position: relative;
+        top: -20px;
+        .task{
+          display: inline-block;
+          .number{
+            color: $lightPurple;
+            font-weight: 100;
+            font-size: 60px;
+            margin: 0 7px 0 0;
+            position: relative;
+            top: 15px;
+          }
+        }
+      }
+    }
+    .add-circle{
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 140px;
+      right: 25px;
+      padding: 10px 14px;
+      cursor: pointer;
+      .fa{
+        color: $lightBlue;
+        font-size: 50px;
+      }
+    }
+  }
+  .content-area{
+    color: #3d3d3d;
+    width: 100%;
+    overflow: auto;
+    .task-container{
+      margin: 40px 0;
+      width: 100%;
+      .task-box{
+        position: relative;
+        padding: 15px;
+        border-bottom: 2px solid #d1d1d1;
+        margin:  0 0 20px 0;
+        background: $white;
+        .notes{
+          display: inline-block;
+          margin-top: 16px;
+        }
+      }
+      .title{
+        color: black;
+        margin: 0 0 15px 0;
+        font-size: 24px;
+      }
+      .date{
+        color: #ababab;
+        font-size: 14px;
+      }
+      a{
+        text-decoration: none;
+        &:visited{
+          color: $darkBlue;
+        }
+      }
+      .check-box{
+        padding: 18px;
+        border-radius: 10px;
+        border: 3px solid $darkBlue;
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 25px;
+        right: 50px;
+        font-size: 32px;
+        color: $darkBlue;
+        .fa{
+          display: none;
+        }
+        &.active{
+          padding: 2px;
+          .fa{
+            display: inline-block;
+          }
+        }
+      }
+      .fa-trash{
+        padding: 18px;
+        border-radius: 10px;
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 8px;
+        right: -8px;
+        font-size: 39px;
+        color:#CF2B1F;
+        transition: all .3s ease-in-out;
+        &:hover{
+        color: #FA3426;
+        }
+      }
+    }
+  }
+  .task-form{
+    overflow: auto;
+    background: $darkBlue;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    color: $white;
+    padding: 50px 0;
+    transform: translate(0, 100%);
+    transition: all .6s ease-in-out;
+    &.active{
+      transform: translate(0, 0);
+    }
+    .close-btn{
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      padding: 15px;
+      cursor: pointer;
+      .fa{
+        font-size: 36px;
+      }
+    }
+    form{
+      display: block;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+    h3{
+      margin: 50px 0;
+      font-size: 36px;
+      text-align: center;
+    }
+    .form-group{
+      margin-bottom: 20px;
+    }
+    label{
+      font-family: 'Roboto',cursive;
+      font-size: 24px;
+      font-weight: 300;
+      display: block;
+      text-transform: capitalize;
+      margin: 0 0 15px;
+    }
+    input[type="text"], textarea{
+      width: 100%;
+      background: rgba(255,255,255, .1);
+      border: none;
+      border-bottom: 1px solid rgba(255,255,255, .7);
+      font-family: 'Roboto', cursive;
+      font-weight: 300;
+      font-size: 21px;
+      color: $white;
+      &:focus{
+        border: none;
+        outline: none;
+      }
+    }
+    textarea{
+      height: 250px;
+    }
+    button{
+      background: $lightBlue;
+      border: none;
+      width: 100%;
+      text-transform: uppercase;
+      color: $white;
+      padding: 15px 20px;
+    }
+  }
+}
+
+.container{
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// Laptops
+@media screen and(min-width: 1200px) and (max-width: 1300px) {
+
+}
+
+// Tablets
+@media screen and(max-width: 1199px) {
+
+}
+
+// Phones
+@media screen and(max-width: 767px) {
+  #all-tasks {
+    .header {
+      .trash{
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 112px;
+        right: 115px;
+        padding: 10px 14px;
+        cursor: pointer;
+      }
+      .add-circle{
+          background: black;
+          border-radius: 50%;
+          position: absolute;
+          top: 106px;
+          right: 25px;
+          padding: 10px 14px;
+          cursor: pointer;
+          }
+        .top {
+          .welcome{
+            right: 2px
+          }
+           .task-total {
+             top: 0;
+             .task {
+               display: inline-block;
+               font-size: 13px;
+               .number {
+                 color: #9787ee;
+                 font-weight: 500;
+                 font-size: 24px;
+                 margin: 0 3px 0 0;
+                 position: relative;
+                 top: 3px;
+               }
+             }
+           }
+        }
+
+    }
+  }
+}
+
+// xs Phones
+@media screen and(max-width: 353px) {
+  #all-tasks {
+    .header {
+      .trash{
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 112px;
+        right: 115px;
+        padding: 10px 14px;
+        cursor: pointer;
+      }
+      .add-circle{
+          background: black;
+          border-radius: 50%;
+          position: absolute;
+          top: 127px;
+          right: 25px;
+          padding: 10px 14px;
+          cursor: pointer;
+          }
+        .top {
+          .welcome{
+            font-size: 15px;
+            a{
+              padding-left: 3px;
+            }
+          }
+          .logo{
+            font-size: 25px;
+          }
+           .task-total {
+             top: 0;
+             .task {
+               display: inline-block;
+               font-size: 13px;
+               .number {
+                 color: #9787ee;
+                 font-weight: 500;
+                 font-size: 24px;
+                 margin: 0 3px 0 0;
+                 position: relative;
+                 top: 3px;
+               }
+             }
+           }
+        }
+    }
+  }
+}
